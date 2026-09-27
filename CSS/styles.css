@@ -1,0 +1,98 @@
+/*Simple selector types
+    -Tag selector
+    -Id selector
+    -Class selector
+    -Universal selector
+    -Grouping selector
+*/
+
+h4{
+    color:dimgrey; 
+}
+#skill{
+    font-size: larger;
+}
+.conc{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+    font-size: medium;
+}
+
+/*
+h4,#id,*,.class{
+    font-size=20px;
+}
+We can group multiple selectors or tags together to express the same property using Grouping selector
+*/
+
+h2{
+    color:chocolate;
+    opacity:85%;
+    font-size: larger;
+}
+.diff{
+    background-color:brown;
+}
+body{
+    background-image: url(blury_wood.jpg);
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+}
+
+/*
+Shorthand representation:
+body{
+    background-image: url(blury_wood.jpg) no-repeat scroll;
+}
+
+*/
+
+/*
+#top{
+    border-style:groove;
+    border-radius:5px;
+}
+*/
+
+#top{
+    border-style:groove;
+    margin:0px 20px 20px;
+    width:100px;
+    background-color: ghostwhite;
+    border-radius: 15px;
+    padding:10px;
+}
+#mypic{
+    margin:20px 50px;
+}
+/*
+To make the multiple border lines to appear as a single line
+
+table{
+    border-collapse:collapse;
+}
+
+*/
+thead th{
+    border:2px solid;
+    text-align: center;
+}
+tbody td{
+    border:2px solid;
+    
+}
+#top:hover{
+    background-color: chocolate;
+}
+
+thead:nth-child(even){
+    background-color: rgb(154, 57, 76);
+}
+#start{
+    position:sticky;
+    top:0;
+    border:2px solid black;
+    padding:20px;
+    background-color: rgb(139, 30, 52);
+}
