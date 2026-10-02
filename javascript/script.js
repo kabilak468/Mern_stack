@@ -97,3 +97,28 @@ for(x of veg){
 for(i in veg){
     console.log(veg[i]);
 }
+console.log(veg.length);
+console.log('\n');
+
+//Map
+let map=new Map();
+map.set(1,'Kabi');
+map.set(2,'Dhanu')
+.set(3,'Krithiksha');
+console.log(map);
+console.log(map.get(2));
+map.delete(1);
+console.log(map.has(4));
+console.log(map);
+console.log(map.size);
+//map.clear();
+//Iterating keys
+for(x of map.keys()){
+    console.log(x);
+}
+for(x of map.values()){
+    console.log(x);
+}
+for(x of map){
+    console.log(x);
+}
