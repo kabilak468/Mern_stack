@@ -44,5 +44,29 @@ car['colour']='brown'; //Insertion
 console.log(car.colour);
 car.colour='red'; //Updation
 console.log(car.colour);
-
 console.log(car.updatedPrice());
+for(key in car){
+    console.log(key,"-",car[key]);
+}
+
+//Value Vs Reference
+
+
+//Value
+let m=108;
+let n=m;
+console.log(m,n);
+n=506;
+console.log(m,n);
+
+//Reference
+let x={
+    name:'Kabi',
+    age:18
+};
+let y=x;
+console.log(x,y);
+y.age=19;
+console.log(x,y);
+y={};
+console.log(x,y);
