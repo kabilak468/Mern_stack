@@ -16,3 +16,11 @@ console.log(b);
 OUTPUT:
 since there is no value..the last element as undefined will be printed.
 */
+
+//Single line Functions and callback
+function operate(op,a,b){
+    return op(a,b);
+}
+let add=(a,b) => a+b;
+let sub=(a,b) => a-b;
+console.log(operate(add,3,2));
