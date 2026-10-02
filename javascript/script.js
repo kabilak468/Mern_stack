@@ -29,7 +29,12 @@ console.log(operate(add,3,2));
 let car={
     name:'nexon',
     brand:'tata',
-    model:2024
+    model:2024,
+    price:15,
+    //Function inside an object
+    updatedPrice(){
+        return this.price+2;
+    }
 }
 
 console.log(car);
@@ -39,3 +44,5 @@ car['colour']='brown'; //Insertion
 console.log(car.colour);
 car.colour='red'; //Updation
 console.log(car.colour);
+
+console.log(car.updatedPrice());
