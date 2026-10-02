@@ -70,3 +70,30 @@ y.age=19;
 console.log(x,y);
 y={};
 console.log(x,y);
+
+//Constructor
+function Multiply(){
+    this.f=3;
+    this.g=4;
+    this.op=function(m){
+        return this.f*this.g*m;
+    }
+}
+let res=new Multiply();
+console.log(res.op(0));
+
+//Arrays
+let veg=[];
+veg=['Potato','Carrot'];
+veg[0]='Pumpkin'; //Replacing
+veg.push('Tomato');//Pushing elements at end
+veg.unshift('Bean');//Pushing elements at beginning
+veg.pop();//Deleting elements at end
+console.log(veg);
+veg.shift();//Deleting elements at beginning
+for(x of veg){
+    console.log(x);
+}console.log('\n');
+for(i in veg){
+    console.log(veg[i]);
+}
