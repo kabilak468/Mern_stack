@@ -111,7 +111,6 @@ map.delete(1);
 console.log(map.has(4));
 console.log(map);
 console.log(map.size);
-//map.clear();
 //Iterating keys
 for(x of map.keys()){
     console.log(x);
@@ -122,3 +121,19 @@ for(x of map.values()){
 for(x of map){
     console.log(x);
 }
+map.clear();
+
+//Set
+let set=new Set();
+set.add(2)
+.add(3)
+.add(2)
+.add(1);
+set.delete(3);
+console.log(set.has(0));
+console.log(set.size);
+console.log(set);
+for(x of set){
+    console.log(x);
+}
+set.clear();
