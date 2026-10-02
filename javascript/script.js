@@ -24,3 +24,18 @@ function operate(op,a,b){
 let add=(a,b) => a+b;
 let sub=(a,b) => a-b;
 console.log(operate(add,3,2));
+
+//Object creation
+let car={
+    name:'nexon',
+    brand:'tata',
+    model:2024
+}
+
+console.log(car);
+delete car['model']; //Deletion
+console.log(car);
+car['colour']='brown'; //Insertion
+console.log(car.colour);
+car.colour='red'; //Updation
+console.log(car.colour);
