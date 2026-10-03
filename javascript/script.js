@@ -155,3 +155,12 @@ let today=new Date();
 console.log(today);
 let bday=new Date('2008-06-04');
 console.log(bday.getFullYear());
+
+//Recursion
+function factorial(n){
+    if(n==0){
+        return 1;
+    }
+    return n*factorial(n-1);
+}
+console.log(factorial(5));
