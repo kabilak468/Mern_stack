@@ -140,13 +140,18 @@ set.clear();
 
 //JSON
 //Object->JSON
-
 let fruit={
     name:"Apple",
     color:"Red"
 };
 console.log(JSON.stringify(fruit));
-
 //JSON->Object
 let student='{"name":"Kabi","dept":"CSE"}';
 console.log(JSON.parse(student));
+
+
+//Date and Time
+let today=new Date();
+console.log(today);
+let bday=new Date('2008-06-04');
+console.log(bday.getFullYear());
