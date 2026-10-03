@@ -220,3 +220,39 @@ catch(error){
     throw new OwnName("Error occurred");
 }
 */
+
+//Promise
+isHalwa=false;
+function waitInQueue(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            if(isHalwa){
+                console.log("Buy Halwa");
+            }else{
+                console.log("No Halwa");
+            }
+        },1000);
+    });
+}
+function buyHalwa(){
+    waitInQueue().then((message)=>{
+        console.log(message);
+    })
+    .catch((error)=>{
+        console.log(error);
+    })
+    .finally(()=>{
+        console.log("Go home");
+    })
+}
+//Async and await function
+/*
+function buyHalwa(){
+  try{
+    let result=await waitInQueue();
+    console.log(result);  
+  }catch(error){
+  console.log("Halwa over");}
+}
+*/
+buyHalwa();
