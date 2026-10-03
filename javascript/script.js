@@ -137,3 +137,16 @@ for(x of set){
     console.log(x);
 }
 set.clear();
+
+//JSON
+//Object->JSON
+
+let fruit={
+    name:"Apple",
+    color:"Red"
+};
+console.log(JSON.stringify(fruit));
+
+//JSON->Object
+let student='{"name":"Kabi","dept":"CSE"}';
+console.log(JSON.parse(student));
