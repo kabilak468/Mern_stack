@@ -206,3 +206,17 @@ console.log(f.age);
 
 
 /*Inheritance is similar to java*/
+
+//Error handling
+let answer;
+try{
+    console.log(answer.name);
+}
+catch(error){
+    console.log("Invalid sentence");
+} //(or)
+/*
+catch(error){
+    throw new OwnName("Error occurred");
+}
+*/
