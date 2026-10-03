@@ -164,3 +164,45 @@ function factorial(n){
     return n*factorial(n-1);
 }
 console.log(factorial(5));
+
+/* 
+Objects are created for the constructors that are written previously using the function keyword,
+but in class...the constructors are created inside the class using constructor keyword without any constructor name*/
+//Class
+class College{
+    name="KCT";
+    years=43;
+    disp(){ //No need of function keyword
+        return this.name;
+    }
+}
+let c=new College();
+console.log(c.disp());
+
+//Constructor inside a class
+class Farmer{
+    name;
+    #age;//-->private access specifier
+    constructor(name,age){
+        this.name=name;
+        this.#age=age;
+    }
+    disp(){
+        return this.name;
+    }
+    //getter function
+    get age(){
+        return this.#age;
+    }
+    //setter function
+    set age(age){
+        this.#age=age;
+    }
+}
+let f=new Farmer('KK',24);
+console.log(f.disp());
+f.age=28;//Passing values to setter function
+console.log(f.age);
+
+
+/*Inheritance is similar to java*/
