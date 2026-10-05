@@ -234,7 +234,7 @@ function waitInQueue(){
         },1000);
     });
 }
-/* function buyHalwa(){
+function buyHalwa(){
     waitInQueue().then((message)=>{
         console.log(message);
     })
@@ -244,9 +244,9 @@ function waitInQueue(){
     .finally(()=>{
         console.log("Go home");
     })
-} */
+} 
 //Async and await function
-
+/* 
 async function buyHalwa(){
   try{
     let result=await waitInQueue();
@@ -254,5 +254,5 @@ async function buyHalwa(){
   }catch(error){
   console.log("Halwa over");}
 }
-
+ */
 buyHalwa();

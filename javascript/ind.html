@@ -4,11 +4,10 @@
         <title>KKwebApps</title>
     </head>
     <body>
-        <h1>Welcome to my website</h1>
-        <script src="/JavaScript/script.js">
-            console.log("This is my first website");
-        </script>
+        <h1 id="head">Welcome to my website</h1>
+        <div id="box">
 
+        </div>
         <!-- 
         Pop ups
         <script>
@@ -17,7 +16,37 @@
             input2=prompt("What is your age","18");
             console.log(input1,input2);
         </script>  --> 
-              
-        
     </body>
+    <!-- <script src="/JavaScript/script.js">
+        console.log("This is my first website");
+        console.log(document);
+    </script> -->
+
+    <!--DOM--Document Object Model-->
+    <script>
+        console.log(document);
+        let element=document.getElementById('head');
+        console.log(element);
+        console.log(element.textContent); <!--Adding text content-->
+        element.textContent+=' You might get benefitted...or may not';
+
+        let pudhusu=document.getElementById('box');<!--Adding tags-->
+        pudhusu.innerHTML='<p>Do check out the upcoming updates !!!</p>';
+        pudhusu.className='div_tag';<!--Adding class-->
+        pudhusu.style.color='red';<!--Can change styles-->
+
+        <!--Creating a tag-->
+        let para=document.createElement('p');
+        para.textContent='Pudhusana content';
+        console.log(para);
+
+        <!--append and prepend-->
+        element.append("Appended content");
+        element.prepend("Prepended content");
+    </script>
+    <!--
+    Similarly, we are able to use getElementByTag(h1) for similar access and addition of properties...
+    (or)
+    querySelector('head')==> but it can access only the topmost first element..
+    -->
 </html>
