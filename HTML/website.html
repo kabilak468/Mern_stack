@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+    </head>
+    <body>
+        <button id="sj">Default</button>
+    </body>
+    <script>
+        <!--Event listener-->
+        <!--Mouse-->
+        let btn=document.getElementById('sj');
+        btn.addEventListener('click',(event)=>{
+            btn.textContent="Button";
+            console.log("Seen");
+        });
+
+        btn=document.getElementById('sj');
+        btn.addEventListener('mouseover',(event)=>{
+            btn.textContent="Arrow on";
+            console.log("Keeping");
+        });
+
+        btn=document.getElementById('sj');
+        btn.addEventListener('mouseout',(event)=>{
+            btn.textContent="Clicked";
+            console.log("Selected");
+        });
+
+        <!--Keyboard-->
+        btn=document.getElementById('sj');
+        document.addEventListener('keydown',(event)=>{
+            console.log(event.key);
+            switch(event.key){
+                case 'ArrowUp':
+                    btn.textContent="Scrolling up";
+                    break;
+                case 'ArrowDown':
+                    btn.textContent="Scrolling down";
+                    break;
+            }
+        });
+    </script>
+</html>
