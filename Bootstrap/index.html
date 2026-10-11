@@ -7,7 +7,27 @@
 </head>
 <body> <!--Refer bootstrap documentation for all bootstrap commands and stuffs-->
     <!--shadow added-->
-    <h1 class="shadow">This is a bootstrap course.</h1>
+
+    <!--Navbar-->
+    <!--Refer bootstrap documentation-->
+    <div class="navbar navbar-expand-md">
+        <div class="container">
+            <a href="#" class="navbar-brand">KK Web</a>
+
+            <!--Hamburger menu-->
+            <button class="navbar-toggler" data-bs-target="#link" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="link" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="shadow mt-4">This is a bootstrap course.</h1>
     <!--Typography
     Using class we can change the font size by including the bootstrap framework.
     To obtain this,
@@ -73,7 +93,6 @@
         <span class="bg-success col m-1">Grid</span>
     </div>
 
-    
 </body>
 <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </html>
